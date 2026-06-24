@@ -1,0 +1,42 @@
+/* Cantaura — brand stylesheet shipped to designs.
+   1) Brand fonts loaded from Google Fonts at runtime (Display: Fraunces · UI: Jost),
+      mirroring the <link> the README tells host apps to add to <head>.
+   2) Design tokens as CSS custom properties, mirrored from src/tokens/tokens.css
+      so designs can reference var(--color-*) etc. (components themselves style
+      via inline JS token values; these variables are the design-author vocabulary). */
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=Jost:wght@300;400;500&display=swap');
+
+:root {
+  /* Color — neutros cálidos */
+  --color-fondo:      #F4EFE3;
+  --color-superficie: #EAE2D0;
+  --color-blanco-os:  #FBF8F1;
+
+  /* Color — acentos */
+  --color-terracota:  #B8542F;
+  --color-oliva:      #5E6347;
+  --color-vino:       #6B2D3C;
+
+  /* Color — texto */
+  --color-texto:      #2E2A22;
+  --color-texto-2:    #6E665A;
+  --color-texto-3:    #A39A8A;
+  --color-linea:      #D8CFBC;
+
+  /* Tipografía */
+  --fuente-display: 'Fraunces', Georgia, serif;
+  --fuente-ui:      'Jost', sans-serif;
+
+  /* Radios */
+  --radio-sm:   4px;
+  --radio-md:   8px;
+  --radio-lg:   14px;
+  --radio-pill: 99px;
+
+  /* Espaciado (escala 8px) */
+  --sp-1: 8px;
+  --sp-2: 16px;
+  --sp-3: 24px;
+  --sp-4: 40px;
+  --sp-5: 64px;
+}
