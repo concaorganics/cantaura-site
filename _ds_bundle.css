@@ -40,3 +40,14 @@
   --sp-4: 40px;
   --sp-5: 64px;
 }
+@media screen and (max-width: 768px) {
+  html, body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  img, video {
+    max-width: 100%;
+    height: auto;
+  }
+}
