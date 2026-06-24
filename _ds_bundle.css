@@ -92,3 +92,39 @@
     height: auto !important;
   }
 }
+/* -- Responsive fix: Actos (grid 2col -> columna unica en movil) -- */
+@media screen and (max-width: 768px) {
+  section[style*="grid-template-columns"] {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 32px !important;
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+  }
+
+  section[style*="grid-template-columns"] > div[style*="aspect-ratio"] {
+    width: 100% !important;
+    max-width: 100% !important;
+    aspect-ratio: 4 / 3 !important;
+  }
+
+  section[style*="grid-template-columns"] > div:not([style*="aspect-ratio"]) {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  section[style*="grid-template-columns"] p {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  section[style*="padding: 130px 40px"] {
+    padding: 60px 24px !important;
+  }
+
+  section[style*="padding: 120px 40px"] {
+    padding-top: 60px !important;
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+  }
+}
